@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#161b22">
+ <meta name="description" content="Un pedido que respeta tus números. Surtido ayuda a revisar caja, existencias y caducidad antes de reponer.">
+ <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; worker-src 'self' blob:; connect-src 'self' https://cdn.jsdelivr.net https://huggingface.co https://*.huggingface.co https://*.xethub.hf.co https://*.hf.co; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+ <title>Surtido · Tu caja primero</title>
+ <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+ <a class="skip-link" href="#workspace">Ir al pedido</a>
+ <nav class="rail" aria-label="Secciones">
+  <a class="mark" href="#pedido" aria-label="Surtido, preparar pedido"><img src="/assets/mark.svg" width="35" height="35" alt=""></a>
+  <div id="nav-items"></div>
+  <div class="rail-bottom"><span class="rail-monogram">RP</span><span>Week 10</span></div>
+ </nav>
+ <div class="shell">
+  <header class="topbar"><a class="wordmark" href="#pedido">surtido<span>.</span></a><div class="breadcrumb"><span>La Esquina</span><span>/</span><span id="current-label">Próximo pedido</span></div><button class="button secondary compact" data-action="receipt" id="receipt-top">Leer ticket <span aria-hidden="true">↗</span></button></header>
+  <main id="workspace" tabindex="-1"></main>
+  <footer class="app-footer"><span><i class="status-dot"></i> Caso de práctica · datos inventados</span><span>Tú decides. No se envía ningún pedido.</span></footer>
+ </div>
+ <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+ <script type="module" src="/app.mjs"></script>
+</body>
+</html>
