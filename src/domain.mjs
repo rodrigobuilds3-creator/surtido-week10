@@ -93,7 +93,7 @@ export function explainRules(s,p=plan(s)){
  return a.join(' ');
 }
 export function aiContext(s,p=plan(s)){return {budget:s.cash-s.reserve,reserve:s.reserve,total:p.total,limited:p.shortfall>0,complete:p.complete,rows:p.rows.map(r=>({product:r.name,count:r.stock,proposal:r.qty,confirmed:!r.reasons.length,riskOfExpiry:r.expiredSoon>0}))};}
-export function validateExplanation(value){const t=String(value||'').trim();if(t.length<25||t.length>900||/\d|<|>|https?:|garantiz|sin riesgo|ahorro seguro/i.test(t))throw Error('La explicación necesita revisión. Usa el cálculo verificable.');return t;}
+export function validateExplanation(value){const t=String(value||'').trim();if(t.length<25||t.length>450||/\d|<|>|https?:|garantiz|sin riesgo|ahorro seguro/i.test(t))throw Error('La explicación necesita revisión. Usa el cálculo verificable.');const words=t.toLocaleLowerCase('es').split(/\s+/),chunks=words.slice(0,-3).map((_,i)=>words.slice(i,i+4).join(' '));if(new Set(chunks).size<chunks.length||words.length>65||!/reserva|pedido|tienda|compra/i.test(t)||/\b(the|object|exactly|protected|reserve|before|after)\b/i.test(t))throw Error('La explicación necesita revisión. Usa el cálculo verificable.');return t;}
 export function economics({demand=[70,75,82,65],oldOrder=100,newOrder=78,cost=1200,price=1600,fee=9900,minutesPerDay=3,onboardingMinutes=30,hourly=6000}={}){
  if(!Array.isArray(demand)||demand.length!==4)throw Error('Se necesitan cuatro semanas.');demand.forEach(v=>integer(v,0,10000));
  integer(oldOrder,0,2000);integer(newOrder,0,2000);integer(minutesPerDay,0,60);integer(onboardingMinutes,0,240);
