@@ -4,6 +4,14 @@
 
 Una mesa de trabajo para decidir la reposición de cuatro productos perecederos con caja, reserva, conteo, costo, paquetes y caducidad. Identidad carbón, blanco y cobalto; interfaz en español.
 
+## Enlaces de entrega
+
+App privada: https://surtido-week10-rodrigo.j6x567qt8g.chatgpt.site
+
+Repositorio privado: https://github.com/rodrigobuilds3-creator/surtido-week10
+
+Dos despliegues reales, Packet previo al código, OCR/LLM ejecutados, prueba sintética independiente, corrección y retest documentados en `docs/`. No hay entrevistas ni ahorros reales medidos.
+
 ## Abrir localmente
 
 Requiere Node.js 20 o superior. No requiere instalar dependencias.
@@ -33,6 +41,6 @@ npm run build
 
 ## Límites y estado
 
-La app y el OCR se probaron en navegador. La evidencia concreta está en `docs/TEST_LOG.md`. Los commits incluyen el Packet anterior al código y fallos reales corregidos. Publicación, dos despliegues, prueba independiente de persona, PDF de BUILDCHAT y grabación no se dan por completados. Ver `docs/DELIVERY_STATUS.md`.
+La app y el OCR se probaron en navegador. La evidencia concreta está en `docs/TEST_LOG.md`. Los commits incluyen el Packet anterior al código y fallos reales corregidos. La publicación y dos despliegues están confirmados. La Persona PDF incluye transcripción y 16 capturas; BUILDCHAT es una exportación literal del registro real de mensajes visibles. La grabación y la entrega en Brightspace siguen pendientes. Ver `docs/DELIVERY_STATUS.md`.
 
 No hay base de datos, pedidos enviados, pagos, pronósticos garantizados o datos reales. El modelo y los recursos OCR se descargan de sus proveedores públicos; los registros del caso no se suben.

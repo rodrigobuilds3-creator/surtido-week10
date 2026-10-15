@@ -8,4 +8,6 @@ Observed obstacle: on mobile, the product card hid unit cost and did not say whe
 
 Correction: show cost per piece and pieces per package within each mobile card; label quantities Piezas a reponer on all viewports and display the package count beneath them. All numbers come from the existing plan; no allocation or money rules changed.
 
-Retest: pending actual second deployment. The tester will repeat cash 900/reserve 240 and explain the yogurt quantity and cost from the product card before opening review.
+Retest after successful second deployment: a fresh isolated tester using the same Elena definition identified 24 yogurt pieces, 4 packages of 6 and unit cost 12 directly from the mobile card before opening review. Review showed yogurt subtotal 288, total 630, remaining cash 270 and reserve 240. The first tester could not resume its browser surface; that failed attempt is retained in the transcript. The successful retest was a new session, not a claim that the original participant returned. The AX had exposed summary totals, so the totals comparison was not blind. These are synthetic observations, not evidence of real-user adoption.
+
+Sixteen actual screenshot outputs were recovered unchanged from the two tester session logs and included in the Persona PDF. A local manifest records source timestamps and SHA-256 hashes.

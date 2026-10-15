@@ -26,8 +26,14 @@ The final design constrains inference to a validated review-focus code and displ
 
 Final actual bounded-code retest: the normal plan returned READY and displayed the reviewed quantity-check explanation. In the same browser session, cash 900 and reserve 240 returned CASH and displayed the reviewed cash-allocation priority. Both were real on-device inference; no order values changed. Initial model loading remains slow and device-dependent.
 
-## Publication and course limits
+## Initial publication limits (historical, resolved below)
 
-Managed source connection failed under the network sandbox. An automatic escalation review rejected source transmission; native ownership and owner-only access were checked. A second review still rejected that exact source push. No push, saved hosted version or deployment is claimed. No workaround was used.
+Managed source connection failed under the network sandbox. An automatic escalation review rejected source transmission; native ownership and owner-only access were checked. A second review still rejected that exact source push. At that point no push, saved hosted version or deployment had succeeded. No workaround was used. The later approved publications are recorded below.
 
-Independent persona chat, 2 deployments, final course PDFs and actual video recording remain pending. This mechanical pass is not described as a real owner interview or independent persona test.
+At that point independent persona chat, 2 deployments, final course PDFs and actual video recording remained pending. This initial mechanical pass was not a real owner interview or independent persona test. See the later evidence section for completed work.
+
+## Published persona correction and retest
+
+First deployment: 24f264e, 2026-10-15 04:15 UTC. A fresh synthetic tester on mobile could not distinguish piece counts from supplier packages until review and could not see unit cost in the card. Corrective commit c6b2b91 labels pieces, package counts and mobile unit cost; syntax check and static build passed. Domain arithmetic did not change. Second deployment succeeded at 04:23 UTC. A separate fresh tester with the same Elena definition correctly read 24 pieces, 4 packages of 6 and unit cost 12 before review. Review preserved total 630, cash 270 and reserve 240. The first tester's failed browser resumption and the retest's non-blind totals limitation are retained, not omitted. Sixteen actual screenshots were archived from tool outputs with hashes.
+
+The private GitHub source is https://github.com/rodrigobuilds3-creator/surtido-week10; all original commits are retained on main. No real-user savings or actual recording/submission is claimed.
