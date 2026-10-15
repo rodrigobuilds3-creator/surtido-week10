@@ -1,0 +1,12 @@
+{
+  "name": "surtido-week10",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/app.mjs && node --check src/domain.mjs && node --check src/ai-worker.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}
