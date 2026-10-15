@@ -13,9 +13,9 @@ Default order 2,316; remaining cash 484; reserve 400. Cash 900 and reserve 240 p
 
 ## Pending for the course submission
 
-- Managed source synchronization and live publication, blocked by automatic approval review. Zero successful deployments are claimed; the required two remain pending.
+- First private deployment succeeded after explicit owner approval: https://surtido-week10-rodrigo.j6x567qt8g.chatgpt.site . Source commit 24f264ec27cbe781693ccbc258f101d2c9474afb. Production cash/review controls verified. The next persona-driven correction is being prepared for the second deployment.
 - GitHub course repository and final URL.
 - Fresh independent synthetic-persona conversation using ordered screenshots, followed by its actual fix and retest. Self-review does not count.
 - Packet/Persona/Buildchat final PDFs and actual recorded video. The pre-code Packet source and implementation addendum are available; a transcript has not been invented.
 
-No real owner interviews, deployment, adoption, savings, real-store data or independent persona success is claimed.
+No real owner interviews, adoption, measured savings or real-store data are claimed. The independent synthetic-persona session is documented separately.
